@@ -1,14 +1,14 @@
-let quantidade = $('div#testemunhos ul').length;
-let limite = (quantidade * 336) * -1; 
-let largura = limite + 336;
-let view_largura = $('section#testemunha div#testemunha-centro').width();
+var quantidade  = $('div#testemunhos ul').length;
+var limite      = (quantidade * 336) * -1; 
+var largura     = limite + 336;
+var view_largura= $('section#testemunha div#testemunha-centro').width();
 
 $('div#testemunhos').css('width',limite*-1);
 
 $('div#testemunha-direita').click( function() {
     
-    posicao_atual = $('div#testemunhos').position().left;
-    nova_posicao = posicao_atual - view_largura;
+    posicao_atual   = $('div#testemunhos').position().left;
+    nova_posicao    = posicao_atual - view_largura;
         
     if ( limite < posicao_atual - view_largura ) {
 
@@ -249,7 +249,7 @@ function esconderMenu(){
     $('nav ul#direita').css('display','none');
 }
 
-let controle = true;
+var controle = true;
 
 $('nav ul#icone-menu-mobile').click(function () {
    if(controle == true) {
