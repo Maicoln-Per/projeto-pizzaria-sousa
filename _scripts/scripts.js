@@ -1,14 +1,14 @@
-var quantidade  = $('div#testemunhos ul').length;
-var limite      = (quantidade * 336) * -1; 
-var largura     = limite + 336;
+var quantidade = $('div#testemunhos ul').length;
+var limite = (quantidade * 336) * -1; 
+var largura = limite + 336;
 var view_largura= $('section#testemunha div#testemunha-centro').width();
 
 $('div#testemunhos').css('width',limite*-1);
 
 $('div#testemunha-direita').click( function() {
     
-    posicao_atual   = $('div#testemunhos').position().left;
-    nova_posicao    = posicao_atual - view_largura;
+    posicao_atual = $('div#testemunhos').position().left;
+    nova_posicao = posicao_atual - view_largura;
         
     if ( limite < posicao_atual - view_largura ) {
 
@@ -26,7 +26,7 @@ $('div#testemunha-direita').click( function() {
 })
 
 $('div#testemunha-esquerda').click( function() {
-    posicao_atual   = $('div#testemunhos').position().left;
+    posicao_atual = $('div#testemunhos').position().left;
 
     if ( posicao_atual + view_largura <= 0 ) {
         nova_posicao = posicao_atual + view_largura;

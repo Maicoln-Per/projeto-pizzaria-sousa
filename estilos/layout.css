@@ -573,6 +573,6 @@ footer div#pizza-rodape-decoracao {
     width: 300px;
     height: 390px;
     opacity: 0;
-    background-image: url(/_imagens/secao15-pizza-rodape.png);
+    background-image: url(../_imagens/secao15-pizza-rodape.png);
     background-repeat: no-repeat;
 }
